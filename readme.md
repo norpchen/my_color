@@ -1,0 +1,1 @@
+This is a very basic library to handle RGB colors for when dealing with Adafruit Neopixel library.
