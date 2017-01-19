@@ -1,6 +1,5 @@
 #pragma once
 
-#include <Adafruit_NeoPixel.h>
 
 // ---------------------------------------------------------------------------------------------------------------------------
 // Simple class to encapsulate an RGB 8 bit color
@@ -24,9 +23,7 @@ public:
 	}
 	// we can let the compiler generate the default copy operator (which will memcpy)
 
-	// use the Neopixel converstion to 32bit long because it's different for RGB vs GRB
-	uint32_t & operator () { return Adafruit_NeoPixel::Color(r,g,b); } ; 
-
+	
 };
 
 // these are const, so they don't eat RAM
