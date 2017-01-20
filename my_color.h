@@ -15,7 +15,7 @@ public:
 		this->g = g1;
 		this->b = b1;
 	};
-	inline blend( my_color other, unsigned int amount)
+	inline void blend( my_color other, unsigned int amount)
 	{
 		this->r = ((other.r*amount) + (this->r * (255-amount)))>>8;
 		this->g = ((other.g*amount) + (this->g * (255-amount)))>>8;
